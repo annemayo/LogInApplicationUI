@@ -7,15 +7,18 @@ class App1LogInUI extends StatelessWidget {
   //log in primary colours
   Color _primaryColor = HexColor('#ffffff');
   Color _accentColor = HexColor('#ffcc03');
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       // Application name
-      title: 'Flutter Stateful Clicker Counter',
+      title: 'Momo Cash App',
       theme: ThemeData(
-        // Application theme data, you can set the colors for the application as
-        // you want
+        //primary color variables
+        primaryColor: _primaryColor,
+        accentColor: _accentColor,
+        scaffoldBackgroundColor: Colors.grey.shade100,
         primarySwatch: Colors.blue,
       ),
       home: MyHomePage(title: 'Flutter Demo Clicker Counter Home Page'),
