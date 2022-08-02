@@ -18,8 +18,10 @@ class App1LogInUI extends StatelessWidget {
         //primary color variables
         primaryColor: _primaryColor,
         accentColor: _accentColor,
+
+        //background for main screen
         scaffoldBackgroundColor: Colors.grey.shade100,
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.grey,
       ),
       home: MyHomePage(title: 'Flutter Demo Clicker Counter Home Page'),
     );
