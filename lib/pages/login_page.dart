@@ -7,7 +7,7 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  double _headerHeight = 200; //header height variable
+  double _headerHeight = 250; //header height variable
 
   @override
   Widget build(BuildContext context) {
@@ -20,14 +20,14 @@ class _LoginPageState extends State<LoginPage> {
               Container(
                 height: _headerHeight,
                 //HEADER
-                child: HeaderWidget(_headerHeight, true, Icons.login),
+                child: HeaderWidget(_headerHeight, true, Icons.login_sharp),
               ),
               SafeArea(
                 //Log in form
                 child: Container(
                   child: Column(
                     children: [
-                      Text('Hello', style: TextStyle(fontSize: 60, fontWeight: FontWeight.bold))
+                      Text('Welcome', style: TextStyle(fontSize: 60, fontWeight: FontWeight.bold))
                     ],
                   ),
                 ),
