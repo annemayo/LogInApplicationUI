@@ -18,8 +18,9 @@ class _MyHomePageState extends State<SplashScreen> {
       decoration: new BoxDecoration(
         gradient: new LinearGradient(
           colors: [
+            Theme.of(context).primaryColor,
             Theme.of(context).accentColor,
-            Theme.of(context).primaryColor
+            Theme.of(context).primaryColor,
           ],
           begin: const FractionalOffset(0, 0),
           end: const FractionalOffset(1.0, 0.0),
@@ -30,6 +31,7 @@ class _MyHomePageState extends State<SplashScreen> {
           tileMode: TileMode.clamp,
         ),
       ),
+      child: AnimatedOpacity(opacity: 1.0, duration: Duration(milliseconds: 1200)),
     );
   }
 }
