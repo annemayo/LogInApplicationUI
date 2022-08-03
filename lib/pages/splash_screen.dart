@@ -13,13 +13,24 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+
+  bool _isVisisble = false;
+
   _SplashScreenState() {
     //splash screen duration
-    new Timer(const Duration(microseconds: 330000), () {
+    new Timer(const Duration(milliseconds: 330000), () {
       setState(() {
+        //redirecting to login page after time lapse
         Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) => LoginPage()), (route) => false);
       });
     });
+
+    new Timer(
+      Duration(milliseconds: 10), (){
+        setState(() {
+          _isVisisble = true;
+        });
+      })
   }
 
   @override
@@ -42,7 +53,8 @@ class _SplashScreenState extends State<SplashScreen> {
         ),
       ),
       child: AnimatedOpacity(
-        opacity: 1.0,
+        //opcaity after duration if splash screen = false
+        opacity: _isVisisble ? 1.0 : 0,
         duration: Duration(milliseconds: 1200),
         child: Center(
           //splash screen icon container
