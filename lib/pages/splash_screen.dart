@@ -21,11 +21,10 @@ class _SplashScreenState extends State<SplashScreen> {
       setState(() {
         //redirecting to login page after time lapse
         Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) => LoginPage()), (route) => false);
-        _isVisisble = true;
       });
     });
 
-    //Timer for fade out effect
+    //Timer for fade out effect to login page
     new Timer(Duration(milliseconds: 9), () {
       setState(() {
         _isVisisble = true;
