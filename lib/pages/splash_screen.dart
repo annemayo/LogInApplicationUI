@@ -13,18 +13,21 @@ class SplashScreen extends StatefulWidget {
 class _MyHomePageState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'HI',
-            ),
+    //container for splash screen
+    return Container(
+      decoration: new BoxDecoration(
+        gradient: new LinearGradient(
+          colors: [
+            Theme.of(context).accentColor,
+            Theme.of(context).primaryColor
           ],
+          begin: const FractionalOffset(0, 0),
+          end: const FractionalOffset(1.0, 0.0),
+          stops: [
+            0.0,
+            1.0
+          ],
+          tileMode: TileMode.clamp,
         ),
       ),
     );
