@@ -1,5 +1,6 @@
-import 'package:flutter/cupertino.dart';
+import 'dart:async';
 import 'package:flutter/material.dart';
+import 'login_page.dart';
 
 //First screen to be displayed when app is loaded
 
@@ -8,10 +9,19 @@ class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key, required this.title}) : super(key: key);
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _SplashScreenState createState() => _SplashScreenState();
 }
 
-class _MyHomePageState extends State<SplashScreen> {
+class _SplashScreenState extends State<SplashScreen> {
+  _SplashScreenState() {
+    //splash screen duration
+    new Timer(const Duration(microseconds: 2000), () {
+      setState(() {
+        Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) => LoginPage()), (route) => false);
+      });
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     //container for whole splash screen
