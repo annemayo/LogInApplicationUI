@@ -21,6 +21,7 @@ class _SplashScreenState extends State<SplashScreen> {
       setState(() {
         //redirecting to login page after time lapse
         Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) => LoginPage()), (route) => false);
+        _isVisisble = true;
       });
     });
 
