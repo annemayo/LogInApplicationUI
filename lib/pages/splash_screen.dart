@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 //First screen to be displayed when app is loaded
@@ -13,7 +14,7 @@ class SplashScreen extends StatefulWidget {
 class _MyHomePageState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
-    //container for splash screen
+    //container for whole splash screen
     return Container(
       decoration: new BoxDecoration(
         gradient: new LinearGradient(
@@ -33,6 +34,19 @@ class _MyHomePageState extends State<SplashScreen> {
       child: AnimatedOpacity(
         opacity: 1.0,
         duration: Duration(milliseconds: 1200),
+        child: Center(
+          //splash screen icon container
+          child: Container(
+            height: 140.0, //dimensions
+            width: 140.0,
+            child: Center(
+              child: ClipOval(
+                //clip or pin icon on splash screen
+                child: Icon(Icons.android_outlined),
+              ),
+            ),
+          ),
+        ),
       ),
     );
   }
