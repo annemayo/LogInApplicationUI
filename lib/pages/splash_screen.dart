@@ -44,7 +44,7 @@ class _MyHomePageState extends State<SplashScreen> {
                 //clip or pin icon on splash screen
 
                 child: Image.network(
-                  'https://img.favpng.com/22/4/25/logo-mtn-ivory-coast-brand-product-design-mtn-group-png-favpng-V8f6BSi8sdZPVMKkDgePRfKNy.jpg',
+                  'https://www.liblogo.com/img-logo/mt4578md0f-mtn-logo-mtn-logo-png-5-skt-aeroshutter.png',
                   fit: BoxFit.fitHeight,
                 ),
 
@@ -56,7 +56,7 @@ class _MyHomePageState extends State<SplashScreen> {
             ),
             decoration: BoxDecoration(shape: BoxShape.rectangle, borderRadius: BorderRadius.all(Radius.circular(22)), color: Colors.white, boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(0.2),
+                color: Colors.black.withOpacity(0.3),
                 blurRadius: 4.0,
                 offset: Offset(5.0, 3.0),
                 spreadRadius: 1.0,
