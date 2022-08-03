@@ -54,14 +54,14 @@ class _MyHomePageState extends State<SplashScreen> {
                 // ),
               ),
             ),
-            decoration: BoxDecoration(shape: BoxShape.rectangle, borderRadius: BorderRadius.all(Radius.circular(22)), color: Colors.white, boxShadow: [
-              BoxShadow(
-                color: Colors.black.withOpacity(0.3),
-                blurRadius: 4.0,
-                offset: Offset(5.0, 3.0),
-                spreadRadius: 1.0,
-              )
-            ]),
+            // decoration: BoxDecoration(shape: BoxShape.rectangle, borderRadius: BorderRadius.all(Radius.circular(22)), color: Colors.white, boxShadow: [
+            //   BoxShadow(
+            //     color: Colors.black.withOpacity(0.3),
+            //     blurRadius: 4.0,
+            //     offset: Offset(5.0, 3.0),
+            //     spreadRadius: 1.0,
+            //   )
+            // ]),
           ),
         ),
       ),
