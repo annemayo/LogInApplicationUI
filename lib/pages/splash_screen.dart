@@ -55,7 +55,12 @@ class _MyHomePageState extends State<SplashScreen> {
               ),
             ),
             decoration: BoxDecoration(shape: BoxShape.rectangle, color: Colors.white, boxShadow: [
-              BoxShadow(color: Colors.black.withOpacity(0.3), blurRadius: 2.0, offset: Offset(5.0, 3.0), spreadRadius: 2.0)
+              BoxShadow(
+                color: Colors.black.withOpacity(0.3),
+                blurRadius: 2.0,
+                offset: Offset(5.0, 3.0),
+                spreadRadius: 10.0,
+              )
             ]),
           ),
         ),
