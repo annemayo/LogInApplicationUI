@@ -13,7 +13,6 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-
   bool _isVisisble = false;
 
   _SplashScreenState() {
@@ -25,12 +24,11 @@ class _SplashScreenState extends State<SplashScreen> {
       });
     });
 
-    new Timer(
-      Duration(milliseconds: 10), (){
-        setState(() {
-          _isVisisble = true;
-        });
-      };
+    new Timer(Duration(milliseconds: 10), () {
+      setState(() {
+        _isVisisble = true;
+      });
+    });
   }
 
   @override
