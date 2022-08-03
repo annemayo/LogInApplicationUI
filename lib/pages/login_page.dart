@@ -1,4 +1,3 @@
-import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
 import 'widgets/header_widget.dart';
 
@@ -8,7 +7,7 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  double _headerHeight = 250; //header height variable
+  double _headerHeight = 200; //header height variable
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +20,7 @@ class _LoginPageState extends State<LoginPage> {
               Container(
                 height: _headerHeight,
                 //HEADER
-                child: HeaderWidget(_headerHeight, true, Icons.login_rounded),
+                child: HeaderWidget(_headerHeight, true, Icons.login),
               ),
               SafeArea(
                 //Log in form
