@@ -42,11 +42,12 @@ class _MyHomePageState extends State<SplashScreen> {
             child: Center(
               child: ClipOval(
                 //clip or pin icon on splash screen
-                child: Icon(
-                  // child: Image.network('https://www.seekpng.com/png/full/69-691715_mtn-mm-logo-generic-mtn-mobile-money-logo.png'),
-                  Icons.image, //logo for splashscreen goes here !!
-                  size: 100,
-                ),
+                // child: Icon(
+                //   // child: Image.network('https://www.seekpng.com/png/full/69-691715_mtn-mm-logo-generic-mtn-mobile-money-logo.png'),
+                //   Icons.url, //logo for splashscreen goes here !!
+                //   size: 100,
+                // ),
+                child: Image.network('https://www.seekpng.com/png/full/69-691715_mtn-mm-logo-generic-mtn-mobile-money-logo.png'),
               ),
             ),
           ),
