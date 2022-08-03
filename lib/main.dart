@@ -6,8 +6,8 @@ void main() => runApp(App1LogInUI());
 
 class App1LogInUI extends StatelessWidget {
   //log in primary colours
-  Color _primaryColor = HexColor('#ffcco3');
-  Color _accentColor = HexColor('#fcd862');
+  Color _primaryColor = HexColor('#fcd862');
+  Color _accentColor = HexColor('#ffcc03');
 
   // This widget is the root of your application.
   @override
