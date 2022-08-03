@@ -24,6 +24,7 @@ class _SplashScreenState extends State<SplashScreen> {
       });
     });
 
+    //Timer for fade out effect
     new Timer(Duration(milliseconds: 9), () {
       setState(() {
         _isVisisble = true;
