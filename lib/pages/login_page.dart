@@ -27,7 +27,7 @@ class _LoginPageState extends State<LoginPage> {
                 child: Container(
                   child: Column(
                     children: [
-                      Text('Welcome', style: TextStyle(fontSize: 60, fontStyle: FontStyle.italic))
+                      Text('Hello', style: TextStyle(fontSize: 60, fontStyle: FontStyle.italic))
                     ],
                   ),
                 ),
