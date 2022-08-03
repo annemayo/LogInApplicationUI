@@ -24,7 +24,7 @@ class _SplashScreenState extends State<SplashScreen> {
       });
     });
 
-    new Timer(Duration(milliseconds: 10), () {
+    new Timer(Duration(milliseconds: 9), () {
       setState(() {
         _isVisisble = true;
       });
