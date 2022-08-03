@@ -42,7 +42,10 @@ class _MyHomePageState extends State<SplashScreen> {
             child: Center(
               child: ClipOval(
                 //clip or pin icon on splash screen
-                child: Icon(Icons.android_outlined),
+                child: Icon(
+                  Icons.android_outlined,
+                  size: 50,
+                ),
               ),
             ),
           ),
