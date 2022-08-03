@@ -30,7 +30,7 @@ class _SplashScreenState extends State<SplashScreen> {
         setState(() {
           _isVisisble = true;
         });
-      })
+      };
   }
 
   @override
