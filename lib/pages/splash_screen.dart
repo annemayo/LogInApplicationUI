@@ -15,7 +15,7 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   _SplashScreenState() {
     //splash screen duration
-    new Timer(const Duration(microseconds: 2000), () {
+    new Timer(const Duration(microseconds: 2000000), () {
       setState(() {
         Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) => LoginPage()), (route) => false);
       });
