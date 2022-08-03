@@ -22,7 +22,7 @@ class App1LogInUI extends StatelessWidget {
 
         //background for main screen
         scaffoldBackgroundColor: Colors.grey.shade100,
-        primarySwatch: Colors.grey,
+        primarySwatch: Colors.yellow,
       ),
       home: SplashScreen(title: 'Momo Cash App'),
     );
