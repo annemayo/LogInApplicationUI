@@ -44,7 +44,7 @@ class _MyHomePageState extends State<SplashScreen> {
                 //clip or pin icon on splash screen
 
                 child: Image.network(
-                  'https://www.seekpng.com/png/full/69-691715_mtn-mm-logo-generic-mtn-mobile-money-logo.png',
+                  'https://img.favpng.com/22/4/25/logo-mtn-ivory-coast-brand-product-design-mtn-group-png-favpng-V8f6BSi8sdZPVMKkDgePRfKNy.jpg',
                   fit: BoxFit.fitHeight,
                 ),
 
