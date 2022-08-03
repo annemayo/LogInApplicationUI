@@ -31,7 +31,10 @@ class _MyHomePageState extends State<SplashScreen> {
           tileMode: TileMode.clamp,
         ),
       ),
-      child: AnimatedOpacity(opacity: 1.0, duration: Duration(milliseconds: 1200)),
+      child: AnimatedOpacity(
+        opacity: 1.0,
+        duration: Duration(milliseconds: 1200),
+      ),
     );
   }
 }
