@@ -45,7 +45,8 @@ class _MyHomePageState extends State<SplashScreen> {
                 child: Image.network(
                   'https://www.seekpng.com/png/full/69-691715_mtn-mm-logo-generic-mtn-mobile-money-logo.png',
                   fit: BoxFit.cover,
-                  width: double.infinity,
+                  width: 300,
+                  height: 300,
                 ),
               ),
             ),
